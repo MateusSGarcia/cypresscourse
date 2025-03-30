@@ -23,5 +23,6 @@ describe("User journey", () => {
       "eq",
       "/testing-your-first-application/installing-cypress-and-writing-our-first-test"
     );
+    //teste adição comentário
   });
 });
