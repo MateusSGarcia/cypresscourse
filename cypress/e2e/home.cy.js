@@ -23,8 +23,8 @@ describe("template spec", () => {
           .eq(3)
           .contains("Get started")
           .click();
-        // cy.url().should('include','/testing-your-first-application')
-        cy.location("pathname").should("eq", "/testing-your-first-application");
+        cy.url().should("include", "/testing-your-first-application");
+        // cy.location("pathname").should("eq", "/testing-your-first-application");
       });
       it("course:Testing Foundations", () => {
         cy.getByData("course-1")

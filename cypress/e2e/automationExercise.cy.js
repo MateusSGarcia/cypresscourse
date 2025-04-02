@@ -6,6 +6,8 @@ describe("automationexercise.com exercises", () => {
     cy.get(".shop-menu").should("be.visible");
     cy.get("#slider-carousel").should("be.visible");
     //Clicar no botão Signup / Login
-    cy.get("");
+    cy.get("li").contains("Signup / Login").should("be.visible").click();
+    cy.get("h2").contains("New User Signup!").should("be.visible");
+    cy.getByDataQA("signup-name").should("be.visible").type("");
   });
 });
